@@ -5,7 +5,7 @@ import mediapipe as mp
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh()
 
-image = cv2.imread('arash.jpg')
+image = cv2.imread('imgs/RR.jpg')
 height,width,_ = image.shape
 rgb_image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
 result = face_mesh.process(rgb_image)

@@ -52,6 +52,8 @@ print("Smile index = ",smile_index)
 cv2.line(image,(x1,y1),(x2,y2),(255,0,255),1)
 cv2.line(image,(x3,y3),(x4,y4),(255,0,255),1)
 
-cv2.imshow("Figo",image)
+cv2.circle(image,(x1,y1),3,(255,255,255),-1)
+
+cv2.imshow("Figo",image[y1:])
 cv2.imwrite("result.jpg",image)
 cv2.waitKey(0)
