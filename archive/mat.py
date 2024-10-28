@@ -25,7 +25,7 @@ x_fit = np.linspace(min(x_data), max(x_data), 100)
 y_fit = model_func(x_fit, *params)
 
 # Create the plot
-plt.imshow(img, extent=[0, 600])  # Adjust extent to match your image and axis limits
+plt.imshow(img, extent=[0, 600, 0, 1000])  # Adjust extent to match your image and axis limits
 plt.scatter(x_data, y_data, color='red', label='Data Points')
 plt.plot(x_fit, y_fit, color='blue', label='Fitted Curve')
 
